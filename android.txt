@@ -1,0 +1,3 @@
+title=Weiss Schwarz Damage Simulator
+author=Roger Li
+orientation=portrait

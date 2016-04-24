@@ -1,0 +1,89 @@
+#:kivy 1.8.0
+
+<CancelChance>:
+	deck_cards: input0
+	deck_cxs: input1
+	damage: input2
+	cancel_burns: input3
+
+	TextInput:
+		id: input0
+		font_size: 40
+		center_x: root.width * 3.5 / 5
+		top: root.top - 300
+		size: 350, 75
+		text: input0.text
+
+	TextInput:
+		id: input1
+		font_size: 40
+		center_x: root.width * 3.5 / 5
+		top: root.top - 420
+		size: 350, 75
+		text: input1.text
+
+	TextInput:
+		id: input2
+		font_size: 40
+		center_x: root.width * 3.5 / 5
+		top: root.top - 540
+		size: 350, 75
+		text: input2.text
+
+	TextInput:
+		id: input3
+		font_size: 40
+		center_x: root.width * 3.5 / 5
+		top: root.top - 660
+		size: 350, 75
+		text: input3.text
+
+	Button:
+		font_size: 40
+		center_x: root.width / 2
+		top: root.top - 830
+		text: "Calculate"
+		size: 200, 75
+		on_press: root.calculate_all()
+
+	Label:
+		font_size: 45
+		center_x: root.width / 4
+		top: root.top - 975 - root.add
+		text: root.chance
+
+	Label:
+		font_size: 45
+		center_x: root.width * 3 / 4
+		top: root.top - 975 - root.add
+		text: root.min_dmg
+
+	Label:
+		font_size: 60
+		center_x: root.width / 2
+		top: root.top - 125
+		text: "Predicted Damage"
+
+	Label:
+		font_size: 40
+		center_x: root.width * 2 / 5 - 150
+		top: root.top - 300
+		text: "Cards in Deck"
+
+	Label:
+		font_size: 40
+		center_x: root.width * 2 / 5 - 150
+		top: root.top - 420
+		text: "Climaxes in Deck"
+
+	Label:
+		font_size: 40
+		center_x: root.width * 2 / 5 - 150
+		top: root.top - 540
+		text: "Damage"
+
+	Label:
+		font_size: 40
+		center_x: root.width * 2 / 5 - 150
+		top: root.top - 660
+		text: "Cancel Burns"
